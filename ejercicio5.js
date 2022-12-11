@@ -12,10 +12,10 @@ const placesToTravel = [
     {id: 59, name: 'Madagascar'}
 ]
 
-for (let i = 0; i < placesToTravel.length; i++) {
+for (let i = placesToTravel.length - 1; i >= 0; i--) {
     if (placesToTravel[i].id == 11 || placesToTravel[i].id == 40) {
         placesToTravel.splice(i,1);
-    } 
+    }
 }
 
 console.log(placesToTravel);

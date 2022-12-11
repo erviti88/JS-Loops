@@ -11,16 +11,10 @@ const toys = [
     {id: 40, name: 'El gato felix'}
     ]
 
-const newToys = [];
-
-for (const toy of toys) {
-    if ( toy.name.includes('gato') == true ) {
-        toys.splice(toy,1);
-    }
-    else {
-        newToys.push(toy);
-    }
+for (let i = toys.length - 1; i >= 0; i--) {
+    if (toys[i].name.includes('gato')){
+        toys.splice(i,1)
+    }  
 }
 
-console.log(newToys);
-
+console.log(toys);
